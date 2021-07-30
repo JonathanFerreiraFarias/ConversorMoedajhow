@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<h1 id="titulo"> Conversor de Moedas Jhow </h1>  
+
+<div id="caixa-principal"> 
+<p class="paragrafo">Converter <b>De</b></p>  
+
+<select class="select"> 
+<option>R$ Real Brasileiro</option>    
+
+
+<select> 
+    <p class="paragrafo">Converter <b>Para</b></p>  
+
+    <select class="select" id="selectMoedas"> 
+    <option>US$ Dólar Americano</option>   
+    <option>€ Euro </option>    
+</select>
+<p class="paragrafo"> <b>Valor</b></p>
+<input id="input" placeholder="R$ 10.000,00" type="number">
+
+<button id="button"><b>Converter</b></button>
+        <div id="caixa-valor">
+             <div class="grana">
+             <img   src="./imagens/brasilc.png">
+             <p class="paragrafo">Real</p>
+             <p class="numero" id="inputReal"> R$ 10.000,00</p>
+             </div>
+          <img id="seta" src="./imagens/Vector.png">
+
+                 <div class="grana">
+                 <img id="bandeiras-moedas" src="./imagens/usa.png">
+                 <p class="paragrafo" id="textoMoeda">Dólar Americano</p>
+                 <p class="numero"id="moedaDolar">$ 2.000,00</p>
+                 </div>
+        </div>
+</div>
+
+
+
+
+</body>
+<style>
+   * {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   } 
+    body{background: #2c2c2c;}
+.paragrafo  { color: blue; font-size: 14px; line-height: normal;
+    margin-left: auto;
+       margin-right: auto;
+}
+#titulo { background: rgb(217, 255, 0); 
+width: 375px;
+height: 66px;
+    color:rgb(3, 3, 3) (104, 16, 16);font-size: 24px;
+text-align: center;
+padding-top: 20px;
+margin-left: auto;
+margin-right: auto;}
+
+#caixa-principal{ 
+    background: #E5E5E5;
+    width: 375px;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;}
+.paragrafo {
+    margin-bottom: 6px;}
+.select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px #BBBBBB;
+    height: 48px;
+    width: 327px;
+    margin-bottom: 23px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: bold;}
+
+    #input {
+    height: 48px;
+    width: 327px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px #BBBBBB;
+    margin-bottom: 23px;
+    outline: none;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: bold;}
+
+#button {
+background: #CDD728;
+border-radius: 25px;
+display: block;
+height: 48px;
+width: 327px;
+cursor: pointer;
+font-size: 18px;
+border: none;
+margin-bottom: 23px;
+outline: none;}
+
+#caixa-valor {
+    border: 1px solid #9657A5;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;}
+
+.grana {
+    text-align: center;
+
+}
+#seta{ 
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 15px;
+       margin-bottom: 15px;}
+       
+.numero {
+font-weight: bold;
+font-size: 20px;
+}
+#button:active{
+    opacity: 0.6;
+}      
+
+
+</style>
+<script src="./scripit.js">
+
+
+
+</script>
+</html>
